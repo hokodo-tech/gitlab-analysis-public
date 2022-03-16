@@ -1,0 +1,15 @@
+### Gitlab_exporter
+
+This script lets us extract information from the Gitlab API, and then push it to a Google sheet.
+
+#### Installation
+
+In a venv, install the requirements from requirements.txt
+Then copy `config.cfg.sample` into `config.cfg` and fill out the "replaceme" values.
+
+#### Usage examples
+
+Export a label report for 2021:
+```
+$ python bin/gitlab_exporter.py generate-label-report --start-date=2021-01-01 --end-date=2022-01-01 --tab-name=2021
+```
